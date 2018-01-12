@@ -1,6 +1,7 @@
 OBJ := hello
 SRC := $(wildcard *.c)
 
-.phony: clean $(OBJ)    
+phony:$(OBJ)
+	
 clean:
-    -rm $(OBJ)
+	-rm $(OBJ)
